@@ -1,4 +1,4 @@
-## This is the ReadME. Wow ##
+## Wow that config is pretty cool ##
 
 I just wanna keep my config files, updated so if one day I lose my laptop, I can install everything once again. Thats all.
 
