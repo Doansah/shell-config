@@ -10,6 +10,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(git web-search zsh-autosuggestions zsh-syntax-highlighting)
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -58,6 +59,25 @@ init_ai() {
 
 EOF
 }
+
+# GIT SCRIPT
+# Simple Git Add Commit Push function 
+# ONLY FOR WHEN YOU UPDATE ONE FILE !!!!!!!!!!!!!!!!!!
+
+gacp() {
+  if [[ -z "$1" ]]; then
+    echo "that file not working man!"
+    echo "retype it..."
+    return 1
+  fi 
+
+
+  git add $1 &&
+  git commit -m "Updated $1" &&
+  git push origin main 
+
+}
+
 
 # syntax highlighting ---
 #
